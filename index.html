@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tidier Cable</title>
+  <link rel="stylesheet" href="css/onepage-scroll.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="http://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.onepage-scroll.min.js"></script>
+</head>
+<body>
+  <main>
+
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Want <br>a tidier <br>cable?</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Find the <br>midpoint <br>first.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Then, <br>add two <br>arms.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Fold <br>legs <br>up.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Right <br>arm <br>left.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Head <br>down, <br>gently.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Left <br>arm <br>right.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Stretch <br>outwards <br>tightly.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Then <br>fold <br>again.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>And <br>again.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>And <br>again.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>And <br>again.</p>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Ta-da, a<br>Chinese <br>knot that</p>
+
+        <audio id="applause" preload>
+          <source src="applause.ogg" type="audio/ogg">
+          <source src="applause.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </section>
+    <section>
+      <div class="image"></div>
+      <div class="description">
+        <p>Looks <br>sooooo <br>elegant.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+
+    var preIndex = 0;
+
+    $("main").onepage_scroll({
+
+      sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+      easing: "ease-in-out",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+      // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+      animationTime: 800,             // AnimationTime let you define how long each section takes to animate
+      pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+      updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+      beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+      afterMove: function(index) {
+
+        // Only play music from 12 to 13
+        if (index == 13 && preIndex == 12 ) {
+          var applause = document.getElementsByTagName("audio")[0];
+          applause.play();
+        }
+
+        preIndex = index;
+
+      },   // This option accepts a callback function. The function will be called after the page moves.
+      loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+      keyboard: true,                  // You can activate the keyboard controls
+      responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+      // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+      // the browser's width is less than 600, the fallback will kick in.
+      direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
+    });
+
+  </script>
+
+</body>
+</html>

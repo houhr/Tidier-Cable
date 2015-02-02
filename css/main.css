@@ -1,0 +1,161 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Changa One', cursive;
+  font-size: 6em;
+  color: HSL(207, 5%, 33%); }
+
+main > section:nth-child(1) .image {
+  background: url(../images/1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(2) .image {
+  background: url(../images/2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(3) .image {
+  background: url(../images/3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(4) .image {
+  background: url(../images/4.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(5) .image {
+  background: url(../images/5.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(6) .image {
+  background: url(../images/6.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(7) .image {
+  background: url(../images/7.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(8) .image {
+  background: url(../images/8.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(9) .image {
+  background: url(../images/9.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(10) .image {
+  background: url(../images/10.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(11) .image {
+  background: url(../images/11.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(12) .image {
+  background: url(../images/12.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(13) .image {
+  background: url(../images/13.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section:nth-child(14) .image {
+  background: url(../images/14.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left; }
+main > section .description {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: #fff;
+  position: relative; }
+  main > section .description p {
+    margin: 0 auto 0 1em;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.onepage-pagination {
+  padding: 5px 0;
+  top: 50%;
+  margin-top: -145px;
+  right: 50%;
+  margin-right: -10px;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=main.css.map */
