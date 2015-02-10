@@ -23,7 +23,7 @@ body, .onepage-wrapper, html {
   -webkit-transform-style: preserve-3d;
 }
 
-.onepage-wrapper .section {
+.onepage-wrapper > .section {
   width: 100%;
   height: 100%;
 }
@@ -72,7 +72,7 @@ body, .onepage-wrapper, html {
   overflow: auto;
 }
 
-.disabled-onepage-scroll .onepage-wrapper .section {
+.disabled-onepage-scroll .onepage-wrapper > .section {
   position: relative !important;
   top: auto !important;
   left: auto !important;

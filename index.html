@@ -10,6 +10,9 @@
   <script src="js/jquery.onepage-scroll.min.js"></script>
 </head>
 <body>
+
+  <p id="starts"><span class="star"></span><span class="star"></span><span class="star"></span></p>
+
   <main>
 
     <section>
@@ -119,10 +122,19 @@
       beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
       afterMove: function(index) {
 
+        if(index == 3 && preIndex == 2) {
+          $('.star').eq(0).addClass('-done');
+        }
+
+        if(index == 8 && preIndex == 7) {
+          $('.star').eq(1).addClass('-done');
+        }
+
         // Only play music from 12 to 13
         if (index == 13 && preIndex == 12 ) {
           var applause = document.getElementsByTagName("audio")[0];
           applause.play();
+          $('.star').eq(2).addClass('-done');
         }
 
         preIndex = index;
